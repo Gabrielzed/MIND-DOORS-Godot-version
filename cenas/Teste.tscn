@@ -1,3 +1,75 @@
 [gd_scene format=3 uid="uid://cksifc3bycglk"]
 
+[ext_resource type="Script" uid="uid://khwb5fbrlbgi" path="res://scripts/player.gd" id="1_j3yhx"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dr8gl"]
+size = Vector2(20, 20)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ri4ms"]
+data = PackedVector3Array(10, 0, 10, -10, 0, 10, 10, 0, -10, -10, 0, 10, -10, 0, -10, 10, 0, -10)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ko5yn"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_j3yhx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_j3yhx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dr8gl"]
+
 [node name="Teste" type="Node3D" unique_id=398730764]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=718881671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13350916, 0, -4.2236032)
+mesh = SubResource("PlaneMesh_dr8gl")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D" unique_id=648494937]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D" unique_id=510904333]
+shape = SubResource("ConcavePolygonShape3D_ri4ms")
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1836679069]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3386391, 0)
+script = ExtResource("1_j3yhx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1174486436]
+shape = SubResource("CapsuleShape3D_ko5yn")
+debug_color = Color(0.70484716, 0.42955616, 0.62056875, 1)
+
+[node name="head" type="Node3D" parent="CharacterBody3D" unique_id=1137491062]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=1240636076]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.41923153, -0.72456264)
+
+[node name="RayCast3D" type="RayCast3D" parent="CharacterBody3D/Camera3D" unique_id=267428738]
+target_position = Vector3(0, 0, -3)
+
+[node name="HoldPosition" type="Marker3D" parent="CharacterBody3D/Camera3D" unique_id=996042245]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D" unique_id=1444495108]
+mesh = SubResource("CapsuleMesh_j3yhx")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="CharacterBody3D" unique_id=1987987649]
+
+[node name="Label" type="Label" parent="CharacterBody3D/CanvasLayer" unique_id=1984162941]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1298526740]
+transform = Transform3D(0.99822605, -0.043435797, 0.040719923, -0.035023235, 0.12468672, 0.9915778, -0.04814721, -0.991245, 0.122944236, 0, 10.033456, 6.5660324)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." unique_id=982049122]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D" unique_id=1752063562]
+mesh = SubResource("BoxMesh_j3yhx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" unique_id=1832682773]
+shape = SubResource("BoxShape3D_dr8gl")

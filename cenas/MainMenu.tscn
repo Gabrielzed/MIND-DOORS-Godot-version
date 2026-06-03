@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://qp2cng0itwl1" path="res://cenas/hover_and_click_efect.gd" id="1_6lti1"]
 [ext_resource type="StyleBox" uid="uid://chjt37ode8ngw" path="res://assets/Estilos/botes_menu.tres" id="2_0ftt0"]
 [ext_resource type="FontFile" uid="uid://7gkaeb25jm4" path="res://assets/fonts/Titulo_font.ttf" id="2_gcar1"]
+[ext_resource type="StyleBox" uid="uid://vh6fo44l3fs1" path="res://assets/Estilos/botes_menu_hover.tres" id="3_sipc5"]
 [ext_resource type="AudioStream" uid="uid://u7tnrkf73cqc" path="res://assets/songs/sons_fundo/B6-My-heart-will-stop-in-joy.ogg" id="4_2rcch"]
 [ext_resource type="Script" uid="uid://dghs7a26et82c" path="res://scripts/menu_music.gd" id="5_2rcch"]
 [ext_resource type="AudioStream" uid="uid://rigu64pw1crl" path="res://assets/songs/efeitos/hover-buttons.wav" id="6_sipc5"]
@@ -36,18 +37,21 @@ alignment = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = ExtResource("2_0ftt0")
+theme_override_styles/hover = ExtResource("3_sipc5")
 text = "Começar "
 
 [node name="OptionsButton" type="Button" parent="VBoxContainer" unique_id=1763562500]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = ExtResource("2_0ftt0")
+theme_override_styles/hover = ExtResource("3_sipc5")
 text = "Opções"
 
 [node name="ExitButton" type="Button" parent="VBoxContainer" unique_id=1250764045]
 layout_mode = 2
 theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = ExtResource("2_0ftt0")
+theme_override_styles/hover = ExtResource("3_sipc5")
 text = "Esquecer"
 
 [node name="Titulo" type="Label" parent="." unique_id=1748698895]

@@ -1,7 +1,6 @@
-res://cenas/node_2d.tscn
+res://cenas/Teste.tscn
+res://cenas/camera.gd
+res://scripts/player.gd
+res://cenas/node_3d.gd
 res://cenas/MainMenu.tscn
 res://scripts/main_menu.gd
-res://cenas/Teste.tscn
-res://cenas/suavizacao_menu_song.gd
-res://scripts/menu_music.gd
-res://cenas/hover_and_click_efect.gd

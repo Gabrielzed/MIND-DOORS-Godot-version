@@ -8,7 +8,7 @@ func _ready():
 	$VBoxContainer/ExitButton.pressed.connect(exit_game)
 
 func start_game():
-	get_tree().change_scene_to_file("res://Scenes/Teste.tscn")
+	get_tree().change_scene_to_file("res://cenas/Teste.tscn")
 
 func open_options():
 	options_panel.visible = true
