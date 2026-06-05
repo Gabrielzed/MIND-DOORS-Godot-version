@@ -1,6 +1,2 @@
 res://cenas/Teste.tscn
-res://cenas/camera.gd
 res://scripts/player.gd
-res://cenas/node_3d.gd
-res://cenas/MainMenu.tscn
-res://scripts/main_menu.gd

@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1780437957
+::res://::1780614743
 icon.svg::CompressedTexture2D::8805477224870773583::1780251057::1780251062::1::::<><><>0<>0<>093604daebaf31557e6b5100bfdb63a9<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1780250945::0::1::::<><><>0<>0<><>::
 ::res://assets/::1780279990
@@ -14,11 +14,13 @@ click-song.wav::AudioStreamWAV::826410659564818717::1780282258::1780282258::1:::
 hover-buttons.wav::AudioStreamWAV::1210127055448863525::1780282207::1780282207::1::::<><><>0<>0<>99fb58772c117a7658b5ef32afe5adc6<>res://.godot/imported/hover-buttons.wav-bb262997c92c44834bccb5ecce6dba2f.sample::
 ::res://assets/songs/sons_fundo/::1780280072
 B6-My-heart-will-stop-in-joy.ogg::AudioStreamOggVorbis::1471014707689926826::1780280072::1780280072::1::::<><><>0<>0<>8e19209b71685d08723c86cd2d2b55c5<>res://.godot/imported/B6-My-heart-will-stop-in-joy.ogg-2553e34d72b9a8f0dc0d398f5f95ddb8.oggvorbisstr::
-::res://cenas/::1780350467
+::res://cenas/::1780446379
+camera.gd::GDScript::5653450150100377151::1780439367::0::1::::<>CharacterBody3D<><>0<>0<><>::
 hover_and_click_efect.gd::GDScript::1155630788131646368::1780283149::0::1::::<>Control<><>0<>0<><>::
-MainMenu.tscn::PackedScene::4022533868299890271::1780350467::0::1::::<><><>0<>0<><>::uid://qp2cng0itwl1::::res://cenas/hover_and_click_efect.gd<>uid://chjt37ode8ngw::::res://assets/Estilos/botes_menu.tres<>uid://7gkaeb25jm4::::res://assets/fonts/Titulo_font.ttf<>uid://vh6fo44l3fs1::::res://assets/Estilos/botes_menu_hover.tres<>uid://u7tnrkf73cqc::::res://assets/songs/sons_fundo/B6-My-heart-will-stop-in-joy.ogg<>uid://dghs7a26et82c::::res://scripts/menu_music.gd<>uid://rigu64pw1crl::::res://assets/songs/efeitos/hover-buttons.wav<>uid://l1k4lonlno2x::::res://assets/songs/efeitos/click-song.wav
-Teste.tscn::PackedScene::5512383416630075464::1780285983::0::1::::<><><>0<>0<><>::uid://khwb5fbrlbgi::::res://scripts/player.gd
-::res://scripts/::1780285336
-main_menu.gd::GDScript::6196809942680633560::1780278174::0::1::::<>Control<><>0<>0<><>::
+MainMenu.tscn::PackedScene::4022533868299890271::1780446379::0::1::::<><><>0<>0<><>::uid://qp2cng0itwl1::::res://cenas/hover_and_click_efect.gd<>uid://chjt37ode8ngw::::res://assets/Estilos/botes_menu.tres<>uid://7gkaeb25jm4::::res://assets/fonts/Titulo_font.ttf<>uid://vh6fo44l3fs1::::res://assets/Estilos/botes_menu_hover.tres<>uid://u7tnrkf73cqc::::res://assets/songs/sons_fundo/B6-My-heart-will-stop-in-joy.ogg<>uid://dghs7a26et82c::::res://scripts/menu_music.gd<>uid://rigu64pw1crl::::res://assets/songs/efeitos/hover-buttons.wav<>uid://l1k4lonlno2x::::res://assets/songs/efeitos/click-song.wav
+node_3d.gd::GDScript::5225277779504956523::1780442182::0::1::::<>Node3D<><>0<>0<><>::
+Teste.tscn::PackedScene::5512383416630075464::1780445030::0::1::::<><><>0<>0<><>::uid://khwb5fbrlbgi::::res://scripts/player.gd
+::res://scripts/::1780446380
+main_menu.gd::GDScript::6196809942680633560::1780446379::0::1::::<>Control<><>0<>0<><>::
 menu_music.gd::GDScript::7595995851585017492::1780281358::0::1::::<>AudioStreamPlayer2D<><>0<>0<><>::
-player.gd::GDScript::717678223786622624::1780285336::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.gd::GDScript::717678223786622624::1780444736::0::1::::<>CharacterBody3D<><>0<>0<><>::
