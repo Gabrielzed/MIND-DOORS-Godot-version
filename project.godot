@@ -15,6 +15,10 @@ run/main_scene="uid://bxksssfb6ep6v"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/area_lights/plugin.cfg")
+
 [input]
 
 ui_left={
@@ -100,6 +104,7 @@ wheel_down={
 
 [rendering]
 
+textures/canvas_textures/default_texture_repeat=1
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+environment/volumetric_fog/volume_size=32
+environment/volumetric_fog/volume_depth=32

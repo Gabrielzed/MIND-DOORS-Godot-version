@@ -6,4 +6,4 @@ func _ready():
 	play()
 
 	var tween = create_tween()
-	tween.tween_property(self, "volume_db", 5, 3.0)
+	tween.tween_property(self, "volume_db", 2, 3.0)

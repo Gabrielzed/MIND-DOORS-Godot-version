@@ -1,2 +1,4 @@
-res://cenas/Teste.tscn
-res://scripts/player.gd
+res://cenas/MainMenu.tscn
+res://scripts/menu_music.gd
+res://cenas/crt.gd
+res://scripts/main_menu.gd
