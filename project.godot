@@ -12,12 +12,12 @@ config_version=5
 
 config/name="Mind doors"
 run/main_scene="uid://bxksssfb6ep6v"
-config/features=PackedStringArray("4.6", "GL Compatibility")
+config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/area_lights/plugin.cfg")
+enabled=PackedStringArray()
 
 [input]
 
@@ -104,7 +104,30 @@ wheel_down={
 
 [rendering]
 
-textures/canvas_textures/default_texture_repeat=1
 rendering_device/driver.windows="d3d12"
+lights_and_shadows/directional_shadow/size=12000
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=4
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality.mobile=4
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality=4
+lights_and_shadows/positional_shadow/soft_shadow_filter_quality.mobile=4
+reflections/sky_reflections/fast_filter_high_quality=true
+global_illumination/voxel_gi/quality=1
+environment/ssao/quality=3
+environment/ssil/quality=3
+viewport/hdr_2d=true
+anti_aliasing/quality/msaa_2d=2
+anti_aliasing/quality/msaa_3d=2
+scaling_3d/mode=1
+scaling_3d/mode.ios=1
+scaling_3d/mode.macos=1
+environment/glow/upscale_mode.mobile=1
+environment/subsurface_scattering/subsurface_scattering_quality=3
+global_illumination/sdfgi/probe_ray_count=2
 environment/volumetric_fog/volume_size=32
 environment/volumetric_fog/volume_depth=32
+lights_and_shadows/positional_shadow/atlas_size=9000
+lights_and_shadows/positional_shadow/atlas_size.mobile=4000
+lights_and_shadows/positional_shadow/atlas_quadrant_0_subdiv=4
+lights_and_shadows/positional_shadow/atlas_quadrant_1_subdiv=4
+lights_and_shadows/positional_shadow/atlas_quadrant_2_subdiv=4
+lights_and_shadows/positional_shadow/atlas_quadrant_3_subdiv=6
